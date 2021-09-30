@@ -1,145 +1,97 @@
-* {
-  padding: 0%;
-  margin: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+*{
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
 }
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  width: 100vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url("./images/pattern-background-mobile.svg");
-  background-color: #e0e8ff;
-  background-size: 100vw 24vh;
-  background-repeat: no-repeat;
-  font-family: 'Red Hat Display', sans-serif;
+body{
+	display: flex;
+	min-height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	background-image: url("./images/pattern-background-mobile.svg");
+	background-color: hsl(225, 100%, 94%);
+	background-size: 100vw 24vh;
+	background-repeat: no-repeat;
+	font-family: 'Red Hat Display', sans-serif;
 }
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 21rem;
-  margin-top: 10%;
-  margin-bottom: 10%;
+main{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	max-width: 21rem;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
-
-h1 {
-  margin: .5rem 0rem;
+h1{
+	margin: .5rem 0rem;
 }
-
-#main-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 19px 19px 0px 0px;
+#main-image{
+	height: 100%;
+    max-width: 100%;
+	border-radius: 19px 19px 0px 0px;
 }
-
-.price-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #f5f7ff;
-  padding: 20px;
-  width: 95%;
-  margin-top: 22px;
+.price-details{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: hsl(225, 100%, 98%);
+	padding: 20px;
+	width: 95%;
+	margin-top: 22px;
 }
-
-#bottom-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: white;
-  border-radius: 0px 0px 19px 19px;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  width: 100%;
+#bottom-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color:   white;
+	border-radius: 0px 0px 19px 19px;
+	padding: 1rem;
+	padding-bottom: 2rem;
+	width: 100%;
 }
-
-.button-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.button-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
-
-button {
-  background-color: blue;
-  color: white;
-  height: 4rem;
-  font-weight: bolder;
-  font-size: 18px;
-  width: 95%;
-  padding: 10px;
-  border-radius: 10px;
-  outline: none;
-  border-color: transparent;
-  margin: 1.5rem 0rem;
+button{
+	background-color: blue;
+	color: white;
+	height: 4rem;
+	font-weight: bolder;
+	font-size: 18px;
+	width: 95%;
+	padding: 10px;
+	border-radius: 10px;
+	outline: none;
+	border-color: transparent;
+	margin: 1.5rem 0rem;
 }
-
-button:hover, a:hover {
-  cursor: pointer;
-  text-decoration: none;
+button:hover, a:hover{
+	cursor: pointer;
+	text-decoration: none;
 }
-
-a {
-  color: #3829e0;
+a{
+	color: hsl(245, 75%, 52%);
 }
-
-#change {
-  margin-left: 1rem;
+#change{
+	margin-left: 1rem;
 }
-
-.cancel-link {
-  text-decoration: none;
+.cancel-link{
+	text-decoration: none;
 }
-
-p, .cancel-link {
-  color: #7280a7;
+p, .cancel-link{
+	color: hsl(224, 23%, 55%);
 }
-
 @media only screen and (min-width: 768px) {
-  body {
-    background-image: url("./images/pattern-background-desktop.svg");
-    background-size: 100vw 45vh;
-  }
-  main {
-    max-width: 24rem;
-  }
+	body {
+	  background-image: url("./images/pattern-background-desktop.svg");
+	  background-size: 100vw 45vh;
+	}
+	main{
+		max-width: 24rem;
+	}
 }
-/*# sourceMappingURL=style.css.map */
